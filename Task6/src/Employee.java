@@ -32,10 +32,11 @@ public class Employee {
         this.salary = salary;
     }
     public int getAnnulSalary(){
-        return salary * 12;
+        return this.salary * 12;
     }
     public int raiseSalary(int percent){
-        return salary * percent /100 ;
+        percent +=100;
+        return this.salary * percent /100 ;
     }
 
     @Override

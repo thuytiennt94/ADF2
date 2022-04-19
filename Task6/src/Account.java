@@ -1,7 +1,7 @@
 public class Account {
-    String id;
-    String name;
-    int balance = 0;
+    private String id;
+    private String name;
+    private int balance = 0;
     public Account(String id, String name){
         this.id = id;
         this.name = name;
@@ -28,17 +28,20 @@ public class Account {
     }
     public int debit(int amount){
         if(amount<= balance){
-            return balance - amount;
+            return balance = balance - amount;
         }else {
-            return balance;
+            System.out.println("Amount exceeded");
         }
+        return balance;
     }
+
     public int transferTo(Account another, int amount){
         if (amount <= balance){
-            return amount;
+            this.balance = balance - amount;
         }else{
-            return balance;
+            System.out.println("Amount exceeded");
         }
+        return balance;
     }
 
     @Override
