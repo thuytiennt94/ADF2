@@ -21,45 +21,60 @@ public class Time {
     }
 
     public void setHour(int hour) {
-        if (hour <24 ){
+        if (hour>=0 && hour<=23 ){
             this.hour = hour;
-        }else {
-            this.hour = 0;
-
         }
     }
 
     public void setMinute(int minute) {
         if (minute >=0 && minute <=59 ){
             this.minute = minute;
-        }else {
-            this.minute = 0;
-
         }
     }
 
     public void setSecond(int second) {
         if (second >=0 && second <=59 ){
             this.second = second;
-        }else {
-            this.minute = 0;
-
         }
     }
     public void setTime(int hour, int minute, int second){
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
+        if (hour>=0 && hour<=23 ){
+            this.hour = hour;
+        }
+        if (minute >=0 && minute <=59 ){
+            this.minute = minute;
+        }
+        if (second >=0 && second <=59 ){
+            this.second = second;
+        }
     }
-
+    public Time nextSecond(){
+        if(second == 59 && minute ==59 && hour ==23) {
+            setTime(0,0,0);
+        }else if (second==59 && minute==59){
+            setTime(hour+1, 0,0);
+        }else if (second==59){
+            setTime(hour, minute+1,0);
+        }else {
+            second+=1;
+        }
+        return this;
+    }
+    public Time previousSecond(){
+        if(second == 0 && minute ==0 && hour ==0) {
+            setTime(23,59,59);
+        }else if (second==0 && minute==0){
+            setTime(hour-1, 59,59);
+        }else if (second==59){
+            setTime(hour, minute-1,59);
+        }else {
+            second-=1;
+        }
+        return this;
+    }
     @Override
     public String toString() {
         return "Time: " +  hour + ":" + minute + ":" + second + '.';
     }
-    public Time nextSecond(){
 
-    }
-    public Time previousSecond(){
-
-    }
 }

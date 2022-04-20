@@ -32,15 +32,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Task5" />
   </component>
   <component name="RunManager" selected="Application.TestTime">
-    <configuration name="TestAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestAccount" />
+    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student" />
       <module name="Task6" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestCircle" />
+    <configuration name="TestAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAccount" />
       <module name="Task6" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,8 +72,8 @@
         <item itemvalue="Application.TestTime" />
         <item itemvalue="Application.TestDate" />
         <item itemvalue="Application.TestAccount" />
+        <item itemvalue="Application.Student" />
         <item itemvalue="Application.TestInvoiceItem" />
-        <item itemvalue="Application.TestCircle" />
       </list>
     </recent_temporary>
   </component>

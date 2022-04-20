@@ -21,15 +21,21 @@ public class Date {
     }
 
     public void setDay(int day) {
-        this.day = day;
+        if (day >= 1 && day<=31){
+            this.day = day;
+        }
     }
 
     public void setMonth(int month) {
-        this.month = month;
+        if (month>=1 && month<=12){
+            this.month = month;
+        }
     }
 
     public void setYear(int year) {
-        this.year = year;
+        if (year>=1900 && year<=9999){
+            this.year = year;
+        }
     }
     public void setDate(int day, int month, int year){
         this.day = day;
