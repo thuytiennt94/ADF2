@@ -21,15 +21,30 @@ public class Time {
     }
 
     public void setHour(int hour) {
-        this.hour = hour;
+        if (hour <24 ){
+            this.hour = hour;
+        }else {
+            this.hour = 0;
+
+        }
     }
 
     public void setMinute(int minute) {
-        this.minute = minute;
+        if (minute >=0 && minute <=59 ){
+            this.minute = minute;
+        }else {
+            this.minute = 0;
+
+        }
     }
 
     public void setSecond(int second) {
-        this.second = second;
+        if (second >=0 && second <=59 ){
+            this.second = second;
+        }else {
+            this.minute = 0;
+
+        }
     }
     public void setTime(int hour, int minute, int second){
         this.hour = hour;
