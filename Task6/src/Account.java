@@ -24,7 +24,7 @@ public class Account {
         return balance;
     }
     public int credit(int amount){
-        return amount * balance;
+        return  balance +=amount;
     }
     public int debit(int amount){
         if(amount<= balance){
